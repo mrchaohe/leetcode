@@ -54,7 +54,6 @@ def min_cost_clib3(cost):
   
     for i in range(2, len(cost)):
         store.append(min(store[i-1], store[i-2]) + cost[i])
-    print(store)
     return min(store[-1], store[-2])
 
 
